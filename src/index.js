@@ -9,7 +9,6 @@ import {
 import { gsap, Power1, Power3 } from "gsap";
 import { DATA } from "./data";
 
-
 const PADDING = 20;
 const ELEMENT_SIZE = 201;
 const pos = ["left", "right"];
@@ -108,7 +107,6 @@ window.addEventListener("load", () => {
 
     return img;
   };
-
 
   document.querySelectorAll(".text-container").forEach((t) => {
     t.addEventListener("mouseover", (e) => {
@@ -221,7 +219,7 @@ window.addEventListener("load", () => {
         result = (scrollY % size) + size - (ELEMENT_SIZE + PADDING);
       }
 
-      it.style.transform = `translateY(${result}px) skewY(${skew}deg)`;
+      it.style.transform = `translate3d(0, ${result}px, 0) skewY(${skew}deg)`;
     });
 
     window.requestAnimationFrame(init);

@@ -12,7 +12,7 @@ const getRandomNumberRange = (min, max) => {
 
 class SmoothScrollConfig {
   // ease value to be used in interpolation
-  static ease = 0.15;
+  static ease = 0.1;
 
   // linear interpolation
   static lerp(current, target) {
