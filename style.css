@@ -1,5 +1,8 @@
 :root {
   --c-white: #fff;
+  --c-light: #adadad;
+  --c-red: rgb(255, 9, 9);
+  --c-dark: rgba(0, 0, 0, 0.5);
 }
 
 *,
@@ -36,7 +39,7 @@ body {
   bottom: 11%;
   right: 23%;
   font-size: 17px;
-  color: #adadad;
+  color: var(--c-light);
   letter-spacing: 1px;
 }
 
@@ -51,7 +54,7 @@ body {
   top: 0;
   left: 0;
   border-radius: 50%;
-  border: 3px solid rgb(255, 9, 9);
+  border: 3px solid var(--c-red);
   transition: padding 0.3s;
   visibility: hidden;
   opacity: 0;
@@ -92,17 +95,8 @@ body {
   margin: 0;
   line-height: 1;
   color: transparent;
-  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.5);
+  -webkit-text-stroke: 1px var(--c-dark);
   cursor: pointer;
-}
-
-.picture {
-  width: 350px;
-  height: 350px;
-  border-radius: 30px;
-  overflow: hidden;
-  backface-visibility: hidden;
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
 }
 
 img,
